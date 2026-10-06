@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find my dress · Maison Elowen</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+<h1>Find my dress</h1><p>Answer three quick questions and we will suggest three gowns from the collection.</p>
+<form id="form">
+<label for="occasion">Occasion</label><select id="occasion" required></select>
+<fieldset style="border:0;padding:0;margin:0"><legend style="font-weight:bold;margin-top:.9rem">Style words (choose any)</legend><div id="styles"></div></fieldset>
+<label for="budget">Budget</label><select id="budget" required></select>
+<p><button class="btn" type="submit">Suggest three dresses</button></p>
+</form>
+<div id="result" class="hidden"></div>
+</main>
+<script src="js/common.js"></script>
+<script src="js/find.js"></script>
+</body>
+</html>

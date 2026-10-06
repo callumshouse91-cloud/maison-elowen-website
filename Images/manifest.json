@@ -1,0 +1,100 @@
+[
+  {
+    "filename": "dress-aline-lace.jpg",
+    "category": "dress",
+    "display name": "A-Line Lace",
+    "one-line description": "A-line bridal gown with floral lace overlay, illusion sleeves and train.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-ballgown-tulle.jpg",
+    "category": "dress",
+    "display name": "Tulle Ball Gown",
+    "one-line description": "Classic strapless sweetheart ball gown with a voluminous layered tulle skirt.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-mermaid-satin.jpg",
+    "category": "dress",
+    "display name": "Satin Mermaid",
+    "one-line description": "Sleek satin mermaid gown with a clean bodice and dramatic knee flare.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-sheath-crepe.jpg",
+    "category": "dress",
+    "display name": "Crepe Sheath",
+    "one-line description": "Minimalist crepe sheath gown with a square neckline and clean silhouette.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-boho-chiffon.jpg",
+    "category": "dress",
+    "display name": "Boho Chiffon",
+    "one-line description": "Flowing bohemian gown with sheer floral lace detailing and relaxed lines.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-tea-length-vintage.jpg",
+    "category": "dress",
+    "display name": "Vintage Tea Length",
+    "one-line description": "1950s-inspired fitted bridal dress with a full mid-calf skirt and bow detail.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-bridal-jumpsuit.jpg",
+    "category": "dress",
+    "display name": "Bridal Jumpsuit",
+    "one-line description": "Modern tailored bridal jumpsuit with halter neck and wide-leg trousers.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "dress-off-shoulder-train.jpg",
+    "category": "dress",
+    "display name": "Off-Shoulder Train",
+    "one-line description": "Structured off-the-shoulder bridal gown with a sweeping dramatic train.",
+    "aspect ratio": "4:5"
+  },
+  {
+    "filename": "hero-boutique-interior.jpg",
+    "category": "site",
+    "display name": "Boutique Interior",
+    "one-line description": "Bright elegant bridal boutique with ivory gowns, soft seating and window light.",
+    "aspect ratio": "16:9"
+  },
+  {
+    "filename": "about-fitting-room.jpg",
+    "category": "site",
+    "display name": "Fitting Detail",
+    "one-line description": "Close-up of seamstress hands working carefully on bridal lace.",
+    "aspect ratio": "3:2"
+  },
+  {
+    "filename": "accessory-veil.jpg",
+    "category": "accessory",
+    "display name": "Lace-Edge Veil",
+    "one-line description": "Long ivory tulle bridal veil with a delicate lace edge.",
+    "aspect ratio": "1:1"
+  },
+  {
+    "filename": "accessory-shoes.jpg",
+    "category": "accessory",
+    "display name": "Bridal Heels",
+    "one-line description": "Ivory satin bridal heels finished with understated pearl detailing.",
+    "aspect ratio": "1:1"
+  },
+  {
+    "filename": "accessory-hairpiece.jpg",
+    "category": "accessory",
+    "display name": "Pearl Hair Comb",
+    "one-line description": "Pearl-and-crystal bridal hair comb styled on neutral linen.",
+    "aspect ratio": "1:1"
+  },
+  {
+    "filename": "logo-maison-elowen.png",
+    "category": "logo",
+    "display name": "Maison Elowen Logo",
+    "one-line description": "Deep navy Maison Elowen serif wordmark on a transparent background.",
+    "aspect ratio": "1:1"
+  }
+]

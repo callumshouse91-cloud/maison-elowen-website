@@ -1,0 +1,98 @@
+[
+  {
+    "id": "aline-lace",
+    "name": "A-Line Lace",
+    "image": "Images/dress-aline-lace.jpg",
+    "silhouette": "A-line",
+    "fabric": "Lace",
+    "detail": "Long illusion sleeves, modest neckline, chapel train",
+    "price_from": 1800,
+    "price_to": 2400,
+    "price_is_placeholder": true,
+    "featured": true
+  },
+  {
+    "id": "ballgown-tulle",
+    "name": "Tulle Ball Gown",
+    "image": "Images/dress-ballgown-tulle.jpg",
+    "silhouette": "Ball gown",
+    "fabric": "Tulle",
+    "detail": "Strapless sweetheart bodice, layered skirt",
+    "price_from": 1600,
+    "price_to": 2200,
+    "price_is_placeholder": true,
+    "featured": true
+  },
+  {
+    "id": "mermaid-satin",
+    "name": "Satin Mermaid",
+    "image": "Images/dress-mermaid-satin.jpg",
+    "silhouette": "Mermaid",
+    "fabric": "Satin",
+    "detail": "Plain bodice, dramatic flare from the knee",
+    "price_from": 1700,
+    "price_to": 2300,
+    "price_is_placeholder": true,
+    "featured": true
+  },
+  {
+    "id": "sheath-crepe",
+    "name": "Crepe Sheath",
+    "image": "Images/dress-sheath-crepe.jpg",
+    "silhouette": "Sheath",
+    "fabric": "Crepe",
+    "detail": "Square neckline, clean lines, no embellishment",
+    "price_from": 1400,
+    "price_to": 1900,
+    "price_is_placeholder": true,
+    "featured": false
+  },
+  {
+    "id": "boho-chiffon",
+    "name": "Boho Chiffon",
+    "image": "Images/dress-boho-chiffon.jpg",
+    "silhouette": "Boho",
+    "fabric": "Chiffon",
+    "detail": "Embroidered floral lace, relaxed shoulder",
+    "price_from": 1500,
+    "price_to": 2000,
+    "price_is_placeholder": true,
+    "featured": false
+  },
+  {
+    "id": "tea-length-vintage",
+    "name": "Vintage Tea Length",
+    "image": "Images/dress-tea-length-vintage.jpg",
+    "silhouette": "Tea-length",
+    "fabric": "Satin",
+    "detail": "1950s style, fitted bodice, collar and bow detail",
+    "price_from": 1300,
+    "price_to": 1800,
+    "price_is_placeholder": true,
+    "featured": false
+  },
+  {
+    "id": "bridal-jumpsuit",
+    "name": "Bridal Jumpsuit",
+    "image": "Images/dress-bridal-jumpsuit.jpg",
+    "silhouette": "Jumpsuit",
+    "fabric": "Crepe",
+    "detail": "Halter neck, wide leg, tailored",
+    "price_from": 1300,
+    "price_to": 1800,
+    "price_is_placeholder": true,
+    "featured": false
+  },
+  {
+    "id": "off-shoulder-train",
+    "name": "Off-Shoulder Train",
+    "image": "Images/dress-off-shoulder-train.jpg",
+    "silhouette": "Ball gown",
+    "fabric": "Mikado",
+    "detail": "Off-the-shoulder, cathedral train",
+    "price_from": 2000,
+    "price_to": 2800,
+    "price_is_placeholder": true,
+    "featured": false
+  }
+]

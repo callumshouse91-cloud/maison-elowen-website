@@ -1,0 +1,34 @@
+{
+  "business": "Maison Elowen",
+  "logo": { "image": "Images/logo-maison-elowen.png", "alt": "Maison Elowen" },
+  "hero": { "image": "Images/hero-boutique-interior.jpg", "alt": "The Maison Elowen boutique with ivory gowns, soft seating and window light" },
+  "about": { "image": "Images/about-fitting-room.jpg", "alt": "A seamstress's hands working carefully on bridal lace" },
+  "tagline": "A small bridal boutique. Gowns are shown one appointment at a time, so you can try them on without being rushed.",
+  "price_note": "Placeholder price range. Real prices to be confirmed by the shop.",
+  "accessories": [
+    { "name": "Lace-Edge Veil", "image": "Images/accessory-veil.jpg", "alt": "Long ivory tulle bridal veil with a lace edge", "one_line": "Long ivory tulle with a delicate lace edge." },
+    { "name": "Bridal Heels", "image": "Images/accessory-shoes.jpg", "alt": "Ivory satin bridal heels with pearl detailing", "one_line": "Ivory satin heels with understated pearl detailing." },
+    { "name": "Pearl Hair Comb", "image": "Images/accessory-hairpiece.jpg", "alt": "Pearl and crystal bridal hair comb on neutral linen", "one_line": "A pearl-and-crystal comb for an updo or a loose style." }
+  ],
+  "hours": [
+    { "day": "Monday", "time": "TBC" },
+    { "day": "Tuesday", "time": "TBC" },
+    { "day": "Wednesday", "time": "TBC" },
+    { "day": "Thursday", "time": "TBC" },
+    { "day": "Friday", "time": "TBC" },
+    { "day": "Saturday", "time": "TBC" },
+    { "day": "Sunday", "time": "TBC" }
+  ],
+  "address": ["Address: TBC"],
+  "phone": "TBC",
+  "email": "TBC",
+  "steps": [
+    { "title": "Your first visit", "timing": "Appointment length: TBC", "text": "Book a time and come along with whoever you would like to bring. We talk about the day, your budget and what you like, then you try on gowns in a private room. There is no obligation to order." },
+    { "title": "Choosing and ordering", "timing": "Delivery time after ordering: TBC", "text": "When you have found the one, we confirm your size, take a deposit (amount TBC) and place the order with the maker. We will tell you the delivery date plainly, and what to allow if your date is close." },
+    { "title": "Fittings and collection", "timing": "Number of fittings and time between them: TBC", "text": "Your gown is altered to fit you at fittings in the shop. When it is ready you collect it, or we arrange delivery. We recommend bringing the shoes and underwear you plan to wear." }
+  ],
+  "sizes": ["6", "8", "10", "12", "14", "16", "18", "20+", "Not sure"],
+  "budgets": ["Under £1,000", "£1,000–£1,500", "£1,500–£2,000", "£2,000–£3,000", "£3,000+", "Not sure yet"],
+  "occasions": ["Church or religious wedding", "Civil ceremony", "Garden or outdoor wedding", "Large formal wedding", "Small or intimate wedding", "Other"],
+  "style_words": ["Classic", "Romantic", "Minimal", "Modern", "Vintage", "Boho", "Dramatic", "Modest"]
+}
