@@ -133,9 +133,11 @@ After every change, the AI updates the sections below. Kirsty reads "For the sho
 Maison Elowen's site shows the boutique, eight gowns with silhouette and fabric filters, accessories and how a fitting works, all leading to one appointment booking form. Bookings are saved in the browser and listed on the owner view.
 
 ### What changed in this version
+- 06 Oct 2026 — v0.2 — Added an Ask the stylist box under the collection grid and a Settings panel (footer link) holding the AI connection. Both work only once an endpoint and key are saved; until then the box says AI not configured and the rest of the site is unchanged. Find my dress and Owner insights are unchanged and still stop at AI not configured.
 - 06 Oct 2026 — v0.1 — Built all nine steps: Home, Collection (silhouette and fabric filters built from the data), Accessories, How a fitting works, Book an appointment, shared footer with hours, address and map placeholder, Owner view, Find my dress (questionnaire) and Owner insights. Data files: `data/dresses.json`, `data/site.json`. Added `Open site.bat` (see Technical log).
 
 ### For the shop this means
+- Once an endpoint and key are saved in Settings, visitors to the collection page can type a question and get a short answer that uses only the gowns shown on that page; anything else is sent to the team with a prompt to book. Until then the box tells visitors the AI is not configured.
 - 
 - 
 - 
@@ -152,7 +154,8 @@ Double-click `Open site.bat` (needs Python on the computer; it starts a local se
 ### What IT (or the shop's host) needs to enable
 - Hosting for the static site (this also removes the need for Open site.bat)
 - A function + email service for bookings
-- An approved AI endpoint and server-held key for the two AI features
+- An approved AI endpoint and key for the AI features, entered once in Settings (footer link) on each machine that uses it. Settings are saved per browser (key `ai_settings` in localStorage) and are lost if the browser data is cleared. Visitors on other computers will see AI not configured until Settings are entered there too.
+- Longer term: a server-held key, so the key is not in the browser (see Back end)
 
 ---
 
@@ -163,3 +166,4 @@ Decisions, assumptions and open doubts, in date order. Nothing goes in "What cha
 - 06 Oct 2026 — Pages: shared header and footer are drawn by `js/common.js` from `site.json`. Home text and button sit above the hero photo so the button is visible without scrolling; photos are never cropped (shown whole). Bookings are saved in `localStorage` under `elowen_bookings`, so they live only in that browser.
 - 06 Oct 2026 — Running locally: browsers such as Chrome and Edge block `fetch` of JSON from `file://` pages, which conflicts with "runs by opening index.html" and "data in JSON". Assumed data stays in JSON, and added `Open site.bat` (uses Python's built-in server, no install of packages). Tested through a local server; not tested by double-clicking `index.html`.
 - 06 Oct 2026 — AI features: Find my dress and Owner insights build the data they would send, show it on screen with an "AI not configured" message and make no network call. Owner insights leaves out names, emails and phone numbers. Content-rule check: no exclamation marks and no banned words in site text.
+- 06 Oct 2026 — Ask the stylist and Settings (v0.2): this changes earlier rules, agreed with Kirsty. "Nothing leaves the laptop" and "AI features call an endpoint set in config.js" now read: when settings are saved, the question and the dress list on the collection page are sent to the endpoint entered in Settings, and nowhere else. Settings replace config.js. All AI code is in `js/ai.js` (`askStylist(question, pageContent)`); no key or endpoint is in the code. Anthropic calls send `anthropic-dangerous-direct-browser-access: true`, which means the key is readable by anyone with access to that browser, so use only on trusted machines with an approved, limited key. Azure OpenAI: assumed the full deployment URL (with api-version) is pasted into Endpoint, sent with an `api-key` header; model default gpt-4o is only a placeholder. Tested with a mocked endpoint (unconfigured message, defaults, save, test, error wording, request headers, clear); not tested against a real Anthropic or Azure service. Page content sent is built from the dress data and site tagline, with placeholder prices labelled as such. Find my dress and Owner insights were not connected to Settings.

@@ -44,8 +44,18 @@ function renderChrome(site) {
   document.body.insertAdjacentHTML("beforeend",
     '<footer class="site-footer"><div><h2>Opening hours</h2><table>' + hours + "</table></div>" +
     "<div><h2>Find us</h2><p>" + site.address.map(esc).join("<br>") + "</p><p>Phone: " + esc(site.phone) + "<br>Email: " + esc(site.email) + "</p>" +
-    '<p><a href="book.html">Book an appointment</a> · <a href="owner.html">Owner view</a></p></div>' +
+    '<p><a href="book.html">Book an appointment</a> · <a href="owner.html">Owner view</a> · <a href="#" id="open-settings">Settings</a></p></div>' +
     '<div><h2>Map</h2><div class="map" role="img" aria-label="Map placeholder">Map to be added (TBC)</div></div></footer>');
+  document.body.insertAdjacentHTML("beforeend",
+    '<dialog id="settings-dialog" aria-labelledby="settings-h"><form method="dialog" onsubmit="return false">' +
+    '<h2 id="settings-h">Settings: AI connection</h2>' +
+    "<p><small>Saved in this browser only, under the name ai_settings. Never written to a file or sent anywhere except the endpoint you enter.</small></p>" +
+    '<label for="ai-provider">Provider</label><select id="ai-provider"><option value="anthropic">Anthropic</option><option value="azure">Azure OpenAI</option></select>' +
+    '<label for="ai-endpoint">Endpoint</label><input type="text" id="ai-endpoint" autocomplete="off"><small id="ai-hint"></small>' +
+    '<label for="ai-model">Model</label><input type="text" id="ai-model" autocomplete="off">' +
+    '<label for="ai-key">API key</label><div class="keyrow"><input type="password" id="ai-key" autocomplete="off"><button type="button" class="btn" id="ai-toggle">Show</button></div>' +
+    '<p class="btnrow"><button type="button" class="btn" id="ai-save">Save</button> <button type="button" class="btn" id="ai-test">Test connection</button> <button type="button" class="btn" id="ai-clear">Clear</button> <button type="button" class="btn" id="ai-close">Close</button></p>' +
+    '<div id="ai-status" role="status" aria-live="polite"></div></form></dialog>');
 }
 
 function getBookings() {
@@ -61,3 +71,4 @@ async function initPage(run) {
     showLoadError(err);
   }
 }
+

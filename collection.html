@@ -10,9 +10,24 @@
 <main>
 <h1>The collection</h1><p>Eight gowns, all available to try on by appointment.</p>
 <div class="filters" id="filters"></div><p id="count" aria-live="polite"></p><div id="dresses" class="grid"></div>
+<section class="stylist" aria-labelledby="stylist-h">
+<h2 id="stylist-h">Ask the stylist</h2>
+<p>Not sure where to start? Ask a question about the gowns above, for example the setting or season of your wedding.</p>
+<form id="stylist-form">
+<label for="stylist-q">Your question</label>
+<textarea id="stylist-q" rows="3" required></textarea>
+<p><button class="btn" type="submit">Ask the stylist</button></p>
+</form>
+<div id="stylist-answer" role="status" aria-live="polite" class="hidden"></div>
+</section>
 <p><a class="btn" href="book.html">Book an appointment</a></p>
 </main>
 <script src="js/common.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/settings.js"></script>
 <script src="js/collection.js"></script>
+<script src="js/stylist.js"></script>
 </body>
 </html>
+
+
